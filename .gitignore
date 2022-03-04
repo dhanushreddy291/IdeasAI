@@ -6,3 +6,4 @@ cockroach-v21.2.5.linux-amd64
 dbtest.py
 input.py
 idea.py
+.env
