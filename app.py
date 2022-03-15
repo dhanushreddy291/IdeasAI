@@ -89,7 +89,7 @@ def postTweet():
     auth.set_access_token(os.getenv('access_token'), os.getenv('access_secret'))
     api = tweepy.API(auth)
     startString = "Startup Idea "
-    tweetString =  + str(a[0]) + ":\n" + str(a[1])
+    tweetString = str(a[0]) + ":\n" + str(a[1])
     if len(tweetString) + 32 < 281:
         tweetString = "Idea " + tweetString + "\n" + "#StartupIdeas #BusinessIdeas"
     else:
