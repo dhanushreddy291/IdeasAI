@@ -88,6 +88,11 @@ def postTweet():
     auth = tweepy.OAuthHandler(os.getenv('consumer_key'), os.getenv('consumer_secret'))
     auth.set_access_token(os.getenv('access_token'), os.getenv('access_secret'))
     api = tweepy.API(auth)
-    tweetString = "Startup Idea " + str(a[0]) + ":\n" + str(a[1])
+    startString = "Startup Idea "
+    tweetString =  + str(a[0]) + ":\n" + str(a[1])
+    if len(tweetString) + 32 < 281:
+        tweetString = "Idea " + tweetString + "#StartupIdeas #BusinessIdeas"
+    else:
+        tweetString = startString + tweetString
     api.update_status(status=(tweetString))
     return "The, Tweet was successful " + str(a[0]) + " " + str(a[1])
