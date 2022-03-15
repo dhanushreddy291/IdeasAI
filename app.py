@@ -91,7 +91,7 @@ def postTweet():
     startString = "Startup Idea "
     tweetString =  + str(a[0]) + ":\n" + str(a[1])
     if len(tweetString) + 32 < 281:
-        tweetString = "Idea " + tweetString + "#StartupIdeas #BusinessIdeas"
+        tweetString = "Idea " + tweetString + "\n" + "#StartupIdeas #BusinessIdeas"
     else:
         tweetString = startString + tweetString
     api.update_status(status=(tweetString))
