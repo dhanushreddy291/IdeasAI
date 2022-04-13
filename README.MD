@@ -1,25 +1,17 @@
-<br/>
-
 # Twitter Bot
 
 A Twitter bot that has been automated to tweet random business/startup ideas once every two hours. Deployed on Heroku. The ideas are sourced from ideasai.net using Web scraping by Beautifulsoup4 once every 24 hours and storing them in a PostgreSQL Database (Cockroach DB).
 
 The twitter account of the bot is: [@startupideas29](https://twitter.com/startupideas29)
 
-<br/>
-
 # Inspiration
 
 I always wanted to automate things. Upon finding that heroku's free tier is an overkill for this app I instantly got excited to make this. Now I just relax and let my followers grow itself without doing any work. The followers also get valuable startup ideas that are being generated using [Open AI](https://openai.com/) and posted on [ideasai.net](https://ideasai.net/)
-
-<br/>
 
 # APIs
 
 - I used the Python Library [Tweepy](https://www.tweepy.org/) for authenticating and posting the tweets.
 - I have used a free tier of [Cockroach DB](https://cockroachlabs.com/) for the database (for storing the ideas)
-
-<br/>
 
 # Things Learnt while making
 
